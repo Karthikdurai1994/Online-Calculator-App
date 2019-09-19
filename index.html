@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator App</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="file:///C:/Users/durai/Desktop/Font%20Awesome/fontawesome-free-5.10.2-web/css/all.css">
+      <!-- Google Fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+      <!-- CSS Link-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css">
+      <!-- Bootstrap Links-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      function add(){
+        var n1=Number(document.getElementById('num1').value);
+        var n2=Number(document.getElementById('num2').value);
+        var result=n1+n2;
+
+        document.getElementById('result').value=result;
+      }
+      function sub(){
+        var n1=Number(document.getElementById('num1').value);
+        var n2=Number(document.getElementById('num2').value);
+        var result=n1-n2;
+
+        document.getElementById('result').value=result;
+      }
+      function mul(){
+        var n1=Number(document.getElementById('num1').value);
+        var n2=Number(document.getElementById('num2').value);
+        var result=n1*n2;
+
+        document.getElementById('result').value=result;
+      }
+      function div(){
+        var n1=Number(document.getElementById('num1').value);
+        var n2=Number(document.getElementById('num2').value);
+        var result=n1+n2;
+
+        document.getElementById('result').value=result;
+      }
+    </script>
+  </head>
+  <body style="background-color:#222831;">
+    <center>
+      <h1 class="heading1">Calculator App</h1>
+      </center>
+      <br>
+
+      <center>
+    <input type="text" size="40" id="num1" class="number1" placeholder=" Enter Number 1"><br><br>
+    <input type="text" size="40" id="num2" class="number2" placeholder="Enter Number 2"><br><br><br>
+  </center>
+
+    <center>
+      <button type="button" name="button" class="btn btn-primary btn-lg" size="100" onclick="add()">Addition</button><br><br><br>
+      <button type="button" name="button" class="btn btn-danger btn-lg" onclick="sub()">Substraction</button><br><br><br>
+      <button type="button" name="button" class="btn btn-warning btn-lg" onclick="mul()">Multiplication</button><br><br><br>
+      <button type="button" name="button" class="btn btn-light btn-lg" onclick="div()">Division</button><br><br><br>
+      <input type="text" size="40" id="result"class="Res" placeholder="Result">
+    </center>
+
+  </body>
+</html>
